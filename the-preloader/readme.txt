@@ -1,116 +1,114 @@
 === Preloader ===
 Contributors: Alobaidi
 Tags: preloader, preload, loader, loading, load
-Requires at least: 3.4.0
-Tested up to: 6.6.1
-Stable tag: 1.0.9
-Requires PHP: 5.2.4
+Requires at least: 5.3.0
+Tested up to: 6.8
+Stable tag: 2.0.0
+Requires PHP: 7.4
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-Add preloader to your website easily, compatible with all major browsers.
+Add a preloader to your site easily in 3 steps. Simple, fast, and compatible with all major browsers.
 
 == Description ==
 
-### Preloader 
+### Preloader
 
-Add preloader to your website easily, compatible with all major browsers.
+Add a preloader to your site easily in 3 steps. Simple, fast, and compatible with all major browsers.
 
-### The Features
+### Features
 
-* Retina Ready (Depending on the size of the image).
-* Custom background color.
-* 10 Options to display Preloader (display it in the entire website or in posts only or in pages only, etc).
-* WooCommerce Support.
-* jQuery & CSS3.
-* Compatible with Google Chrome, FireFox, Opera, Safari, IE9, IE10, IE11, and with mobile devices like iPad, iPhone, Android, etc.
-* Easy to use.
+On June 19, 2025, we released version 2.0.0. Features:
 
-### Live Demo
+1. Easy to use - set up your preloader in just 3 steps.
+2. Upload your own GIF image or choose from 2 free templates.
+3. Customize preloader size and background color.
+4. Select where to show the preloader (entire site, blog page, posts, etc).
+5. Choose who sees the preloader: everyone, visitors only, or logged in users only.
+6. Works with any WordPress theme - no need to re-integrate after theme updates or changes.
+7. Compatible with all major browsers.
+8. Lightweight and optimized for performance.
+9. Clear documentation and helpful FAQ section.
+10. Upgrade to Premium version to get flexible display options, 30+ professional templates, and other features.
 
-* Live Demo: [https://wp-plugins.in/the-preloader](https://wp-plugins.in/the-preloader)
+### Live Demo & Usage Guide
 
-### You might like it
-* McPopup Plugin – Popup Form for Mailchimp: [https://wordpress.org/plugins/mcpopup-popup-form-for-mailchimp/](https://wordpress.org/plugins/mcpopup-popup-form-for-mailchimp/)
-* Video Popup Plugin: [https://wordpress.org/plugins/video-popup/](https://wordpress.org/plugins/video-popup/)
-
-### Rate The Plugin
-
-* [Please rate Preloader plugin](https://wordpress.org/support/view/plugin-reviews/the-preloader#postform)
-* [Read people reviews](https://wordpress.org/support/view/plugin-reviews/the-preloader)
-
-### More Plugins
-
-* [My Plugins](https://profiles.wordpress.org/alobaidi#content-plugins)
+* [Live Demo](https://wp-plugins.in/PreloaderPlugin)
 
 == Installation ==
 
-### Installation
+### Installation & Configuration
 
-1. Upload 'the-preloader' folder to the '/wp-content/plugins/' directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Go to Plugins menu > Preloader.
-4. Enter your background color code and your Preloader image link.
-5. Choose display Preloader, default is "In The Entire Website".
-6. Open header.php file for your theme and insert Preloader HTML element after body tag.
+1. Upload the 'the-preloader' folder to the '/wp-content/plugins/' directory.
+2. Activate the plugin through the Plugins menu in WordPress.
+3. Go to the Preloader menu > General tab, enable the preloader, upload your GIF image, and adjust its settings.
+4. Or, go to the Templates tab to choose from two free templates.
+5. Go to the Display tab to select where to show the preloader (entire site, posts, etc), and choose who sees the preloader (everyone, visitors only, or logged in users only).
+6. Save changes.
+7. Clear your site's cache if you're using a caching plugin.
 
-[Read explanation of use](http://wp-plugins.in/the-preloader)
+Finally, if the preloader doesn't show, click on the "Integration" tab, and follow the instructions there.
+
+For common issues and helpful tips, check the FAQ tab.
+
+[Usage Guide](https://wp-plugins.in/PreloaderPlugin)
 
 == Frequently Asked Questions ==
 
 ### FAQ
 
-* [Read explanation of use.](http://wp-plugins.in/the-preloader)
-* For more questions or help, [contact me](http://wp-plugins.in/1XnA5Qr).
-* [Or on Twitter.](http://wp-plugins.in/1L6zCZL)
+For common issues and helpful tips, go to Preloader > FAQ tab.
+
+* [Usage Guide](https://wp-plugins.in/PreloaderPlugin)
+* [Contact us](https://wp-plugins.in/Contact).
+
+== Screenshots ==
+
+1. General Options.
+2. Display Options.
+3. Preloader Templates.
+4. Manual Integration.
 
 == Changelog ==
 
+= 2.0.0 =
+* Everything has changed in this version! Explore it yourself.
+* Go to the Preloader menu > General tab, enable the Preloader and adjust your settings.
+* For common issues and helpful tips, go to Preloader > FAQ tab.
+* [How to Use v2.0.0](https://wp-plugins.in/PreloaderPlugin)
+
 = 1.0.9 =
-
-1. Fixing header.php file URL on the settings page.
-2. WooCommerce support (new option on the settings page).
-3. Improving Preloader speed in JavaScript.
-
-You can change Preloader image width and height, buy [Image Size Extension](http://wp-plugins.in/PreloaderImageSizeExtension) at a low price on PayPal.
+1. Fixed header.php file URL in settings page.
+2. Improved preloader performance in JavaScript.
 
 = 1.0.8 =
-
-* Preloader Image Size Extension is ready! Now you can change Preloader image width and height. Update this plugin and buy [Image Size Extension](http://wp-plugins.in/PreloaderImageSizeExtension) on PayPal. [Read Extension Usage..](http://wp-plugins.in/the-preloader)
+* Preloader Image Size Extension is ready!
 
 = 1.0.7 =
-
-* < No Script > HTML tag added in < HEAD > to hide preloader if JavaScript is OFF in user browser.
+* Added < noscript > tag in <head> to hide preloader when JavaScript is disabled.
 
 = 1.0.6 =
-
-* Fixing preloader delay.
-* Note: please after plugin update go to Plugins menu > Preloader, and insert preloader html element after body tag in your header.php file for your theme, this is necessary.
+* Fixed preloader delay issue.
+* Note: After updating, please go to Plugins menu > Preloader and add the preloader HTML element after the body tag in your theme's header.php file.
 
 = 1.0.5 =
-
-* Fixing moves script to body html tag, now all script in head html tag, please update now this is necessary.
+* Fixed script location - all scripts now properly loaded in head tag.
 
 = 1.0.4 =
-
-* Front Page Support.
-* 404 Error Page Support.
+1. Added support for Front Page.
+2. Added support for 404 Error Page.
 
 = 1.0.3 =
-
-* Conditional before JavaScript added.
+* Added conditional JavaScript loading.
 
 = 1.0.2 =
-
-* Fixing big problem! Please update quickly.
-* New Settings! Now you can display preloader in home page only or in posts only, etc.
-* PHP Files Protection.
-* Uninstall file added.
+1. Fixed critical issue.
+2. Added new display location settings (homepage only, posts only, etc.).
+3. Added PHP file protection.
+4. Added uninstall functionality.
 
 = 1.0.1 =
-
-* Remove is_admin() function.
+* Removed is_admin() function.
 
 = 1.0.0 =
-
-* First version.
+* Initial release.

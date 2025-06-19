@@ -1,3 +1,3 @@
 <?php
 
-# Silence of gold.
+//die( 'Silence of gold!' );
