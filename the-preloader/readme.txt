@@ -3,22 +3,24 @@ Contributors: Alobaidi
 Tags: preloader, preload, loader, loading, load
 Requires at least: 5.3.0
 Tested up to: 6.8
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-Add a preloader to your site easily in 3 steps. Simple, fast, and compatible with all major browsers.
+The ultimate Preloader plugin for WordPress. Smart, flexible, and made for easy control. Add a preloader to your website easily in only 3 steps.
 
 == Description ==
 
 ### Preloader
 
-Add a preloader to your site easily in 3 steps. Simple, fast, and compatible with all major browsers.
+The ultimate Preloader plugin for WordPress. Smart, flexible, and made for easy control.
+
+Add a preloader to your website easily in only 3 steps. Simple, fast, and compatible with all major browsers.
 
 ### Features
 
-On June 19, 2025, we released version 2.0.0. Features:
+On June 19, 2025, we released version "2.0.0". Features:
 
 1. Easy to use - set up your preloader in just 3 steps.
 2. Upload your own GIF image or choose from 2 free templates.
@@ -65,11 +67,14 @@ For common issues and helpful tips, go to Preloader > FAQ tab.
 == Screenshots ==
 
 1. General Options.
-2. Display Options.
-3. Preloader Templates.
-4. Manual Integration.
 
 == Changelog ==
+
+= 2.0.1 =
+1. Optimized plugin initialization.
+2. Added a new menu icon.
+
+After updating, no action is required on your part. Enjoy!
 
 = 2.0.0 =
 * Everything has changed in this version! Explore it yourself.

@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Preloader
- * Version: 2.0.0
- * Description: Add a preloader to your site easily in 3 steps. Simple, fast, and compatible with all major browsers.
+ * Version: 2.0.1
+ * Description: The ultimate Preloader plugin for WordPress. Smart, flexible, and made for easy control. Add a preloader to your website easily in only 3 steps.
  * Author: Alobaidi
  * Author URI: https://wp-plugins.in/PreloaderPlugin
  * Plugin URI: https://wp-plugins.in/PreloaderPlugin
@@ -27,7 +27,7 @@ if ( !defined('ABSPATH') ) {
 
 // Define plugin constants
 define('THE_PRELOADER_PLUGIN_ID', 'the_preloader');
-define('THE_PRELOADER_PLUGIN_VERSION', '2.0.0');
+define('THE_PRELOADER_PLUGIN_VERSION', '2.0.1');
 define('THE_PRELOADER_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('THE_PRELOADER_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('THE_PRELOADER_PLUGIN_BASENAME', plugin_basename(__FILE__));
@@ -68,9 +68,6 @@ add_filter('plugin_action_links', 'the_preloader_plugin_action_links', 10, 5);
 
 // Plugin initialization
 function the_preloader_init() {
-    // Load text domain for translations
-    load_plugin_textdomain('the-preloader', false, dirname(THE_PRELOADER_PLUGIN_BASENAME) . '/languages');
-    
     if ( !class_exists('The_Preloader_Core') ) {
         // Load main class file first
         require_once THE_PRELOADER_PLUGIN_PATH . 'includes/inc-classes.php';

@@ -123,16 +123,19 @@ class The_Preloader_Settings {
         }
     }
 
+    /**
+     * SVG Menu icon
+     * @since    2.0.1
+     */
+    private function menu_icon_svg() {
+        return '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256"><path fill="#A7AAAD" d="M200.706 38.3244C203.921 37.7633 207.707 38.5486 210.535 40.1675C214.003 42.1137 216.532 45.3832 217.545 49.2281C218.433 52.6028 218.128 57.2186 216.329 60.2273C215.519 61.5532 214.599 62.8083 213.578 63.9791C212.683 64.9998 211.669 66.0627 210.681 67.0168C203.847 73.6171 197.43 80.8297 190.217 86.9995C188.698 88.2985 185.929 89.1341 184.011 89.6187C171.236 91.7614 161.42 77.0072 169.12 66.2913C173.153 61.5394 177.91 56.5868 182.471 52.3313C187.937 47.2327 193.109 39.5917 200.706 38.3244Z"/><path fill="#A7AAAD" d="M203.045 113.1C204.994 112.819 212.516 112.879 214.968 112.923C222.27 113.055 230.264 112.522 237.45 113.455C239.132 113.673 241.833 115.15 243.239 116.211C246.366 118.541 248.417 122.038 248.924 125.905C250.211 135.286 243.831 142.058 234.825 143.237C227.032 143.457 219.091 143.175 211.282 143.297C207.907 143.349 203.52 143.475 200.289 142.749C197.919 142.213 195.713 141.113 193.859 139.541C190.836 136.947 188.969 133.256 188.67 129.283C188.369 125.316 189.654 121.391 192.243 118.369C195.18 114.924 198.596 113.45 203.045 113.1Z"/><path fill="#A7AAAD" d="M127.269 188.591C130.615 188.332 134.25 189.673 136.966 191.493C143.788 196.065 143.478 203.952 143.29 211.186C143.238 213.197 143.322 215.211 143.269 217.19C142.929 229.918 146.818 246.238 129.688 249.03C121.061 249.248 113.912 244.437 113.167 235.193C112.521 227.181 113.198 218.855 112.93 210.801C112.83 207.797 112.842 203.564 113.417 200.671C113.864 198.313 114.889 196.103 116.399 194.238C119.156 190.837 122.958 189.031 127.269 188.591Z"/><path fill="#A7AAAD" d="M125.898 7.29992C129.724 6.97614 132.868 7.43681 136.216 9.46808C146.155 15.5985 142.699 28.3146 143.27 38.0506C143.526 42.4213 143.238 47.3853 143.273 51.8185C143.337 59.8461 138.307 65.7506 130.526 67.458C122.223 68.1273 114.826 63.9727 113.362 55.0601C112.83 49.5059 112.758 43.1605 112.959 37.5783C113.21 30.6229 111.549 19.4003 115.693 13.6019C118.119 10.2255 121.793 7.95697 125.898 7.29992Z"/><path fill="#A7AAAD" d="M21.5012 113.099C21.608 113.084 21.7149 113.069 21.8218 113.054C29.8072 112.849 37.8132 112.907 45.8029 112.929C51.8349 112.946 57.0136 112.474 62.0207 116.421C65.0998 118.871 67.0802 122.443 67.5267 126.352C67.9798 130.36 66.8218 134.383 64.3077 137.537C61.5729 140.935 57.8305 142.706 53.5597 143.176C52.0669 143.265 50.5151 143.318 48.9927 143.278C38.9991 143.014 28.6954 143.887 18.7748 142.794C17.0424 142.603 14.0259 140.857 12.6735 139.766C9.62413 137.322 7.68883 133.752 7.30526 129.863C6.35687 120.676 12.5345 113.922 21.5012 113.099Z"/><path fill="#A7AAAD" d="M72.9578 166.572C76.3674 166.102 80.1108 167.179 82.9717 169.038C86.3558 171.211 88.7032 174.674 89.4678 178.622C90.2497 182.545 89.4424 186.361 87.2404 189.678C84.8367 193.299 64.9876 213.261 61.1669 215.749C59.2922 216.97 57.1543 217.516 54.9885 217.948C51.2247 218.345 47.4471 217.336 44.3824 215.116C36.5301 209.427 36.1438 198.681 42.898 191.963C49.9019 184.997 56.7883 177.882 63.8784 170.999C66.4662 168.486 69.4236 167.101 72.9578 166.572Z"/><path fill="#A7AAAD" d="M179.693 166.572C183.287 166.309 186.687 166.939 189.734 168.931C193.077 171.117 213.257 191.378 215.703 194.826C216.749 196.3 217.394 198.139 217.748 199.907C218.56 203.896 217.729 208.044 215.444 211.413C212.756 215.374 209.247 217.08 204.692 217.944C199.209 218.369 193.861 215.987 190.481 211.851C184.747 204.835 168.485 192.979 166.766 184.48C165.982 180.569 166.792 176.508 169.017 173.197C171.626 169.311 175.228 167.454 179.693 166.572Z"/></svg>';
+    }
+
     public function add_menu_page() {
-        $svg_url = THE_PRELOADER_PLUGIN_URL . 'includes/admin-assets/images/menu-icon.svg';
-        
-        $response = wp_remote_get($svg_url);
-        if ( !is_wp_error($response) && wp_remote_retrieve_response_code($response) === 200 ) {
-            $svg = wp_remote_retrieve_body($response);
-            $menu_icon = 'data:image/svg+xml;base64,' . base64_encode($svg);
-        } else {
-            $menu_icon = 'dashicons-admin-generic';
-        }
+        $menu_icon = 'dashicons-admin-generic'; // default menu icon
+
+        $svg_icon  =  $this->menu_icon_svg();
+        $menu_icon = 'data:image/svg+xml;base64,' . base64_encode($svg_icon);
 
         add_menu_page(
             esc_html__('Preloader Settings', 'the-preloader'),
@@ -142,10 +145,6 @@ class The_Preloader_Settings {
             array($this, 'render_page'),
             $menu_icon
         );
-    }
-
-    public function section_callback(){
-        // Nothing here...
     }
 
     public function get_default_settings() {
@@ -181,13 +180,6 @@ class The_Preloader_Settings {
         );
         // phpcs:enable PluginCheck.CodeAnalysis.SettingSanitization.register_settingDynamic
         
-        add_settings_section(
-            'the_preloader_asf',
-            esc_html__('Preloader Settings', 'the-preloader'),
-            $this->section_callback(),
-            'the_preloader_options'
-        );
-        
         if ( !get_option('the_preloader_settings') ) {
             $default_settings = $this->get_default_settings();
 
@@ -205,9 +197,6 @@ class The_Preloader_Settings {
             }
             
             add_option('the_preloader_settings', $default_settings);
-            if ( function_exists('wp_cache_flush') ) {
-                wp_cache_flush();
-            }
         }
     }
 
@@ -864,8 +853,10 @@ class The_Preloader_Settings {
                 <?php
                 printf(
                     // translators: %1$s and %2$s are image link tags, %3$s and %4$s are upgrade link tags
-                    esc_html__('Cookie-based Display feature allows showing the preloader to each visitor/user once, then hides it for a set number of days before showing it again automatically! This feature is GDPR compliant. See the cookie settings in this %1$simage%2$s. %3$sUpgrade to Premium%4$s.', 'the-preloader'),
+                    esc_html__('Instead of showing the preloader every time a visitor opens your website, show it just once for each visitor or user, then again after a set number of days for the same visitor or user! A smart way to improve user experience and reduce annoyance. 3 Options. GDPR compliant. See the cookie-based display settings in this %1$simage%2$s or a %3$slive demo%4$s. %5$sUpgrade to Premium%6$s.', 'the-preloader'),
                     '<a href="' . esc_url(THE_PRELOADER_PLUGIN_URL . 'includes/admin-assets/images/cookie-feature.png') . '" target="_blank">',
+                    '</a>',
+                    '<a href="https://wp-plugins.in/Preloader-Cookie-basedDisplay" target="_blank">',
                     '</a>',
                     '<a href="https://wp-plugins.in/PreloaderPremium" target="_blank">',
                     '</a>'
@@ -936,8 +927,19 @@ class The_Preloader_Settings {
             <?php esc_html_e('Click on the color fields to choose colors using the color picker, or double-click to enter custom HEX color code. To switch back to the color picker, double-click the field again. For more details, read the answer to question #3 in the FAQ tab.', 'the-preloader'); ?>
         </p>
 
-        <p class="tp-tagline" style="margin-bottom: 15px;">
+        <p class="tp-tagline" style="margin-bottom: 7px;">
             <?php esc_html_e('To restore template customization options to their default values, click "Reset".', 'the-preloader'); ?>
+        </p>
+
+        <p class="tp-tagline" style="margin: 15px 0; color: #555; padding: 12px; border-radius: 5px; background: #f0f0f0;">
+            <strong class="tp-premium-feature"><?php esc_html_e('Typing Effect Template:', 'the-preloader'); ?></strong> <?php 
+            printf(
+                // translators: %1$s is opening link tag, %2$s is closing link tag
+                esc_html__('How about showing a message or promoting a coupon on your website while page is loading? With the Typing Effect Template for Preloader, you can turn loading time into a clever opportunity to engage your visitors. See a %1$slive demo%2$s.', 'the-preloader'),
+                '<a href="https://wp-plugins.in/TypingEffectTemplate" target="_blank">',
+                '</a>'
+            );
+            ?>
         </p>
 
         <div class="template-colors">
@@ -1317,11 +1319,13 @@ class The_Preloader_Settings {
             <p class="tp-tagline" style="margin-bottom: 15px; color: #555; font-size: 16px;">
                 <?php 
                 printf(
-                    // translators: %1$s and %2$s are first link tags, %3$s and %4$s are second link tags
-                    esc_html__('Take your preloader to the next level with our %1$sPremium Version%2$s. Get advanced display controls, add a delay after loading before fade out, control fade speed, hide preloader on mobile devices, Cookie-based Display feature, and choosing from %3$s30+ professional preloader templates%4$s. Show/hide the preloader on specific content by their IDs and on specific WooCommerce pages. There\'s also a single option to show the preloader on any available public custom post type.', 'the-preloader'),
+                    // translators: %1$s and %2$s are first link tags, %3$s and %4$s are second link tags, %5$s and %6$s are third link tags
+                    esc_html__('Take your preloader to the next level with our %1$sPremium Version%2$s. Get advanced display controls, add a delay after loading before fade out, control fade speed, hide preloader on mobile devices, Cookie-based Display feature, and choosing from %3$s30+ professional preloader templates%4$s — including the awesome %5$sTyping Effect Template%6$s to show a message or promote a coupon while page is loading. Show/hide the preloader on specific content by their IDs and on specific WooCommerce pages. There\'s also a single option to show the preloader on any available public custom post type.', 'the-preloader'),
                     '<a href="https://wp-plugins.in/PreloaderPremium" target="_blank">',
                     '</a>',
                     '<a href="https://wp-plugins.in/PreloaderTemplates" target="_blank">',
+                    '</a>',
+                    '<a href="https://wp-plugins.in/TypingEffectTemplate" target="_blank">',
                     '</a>'
                 );
                 ?>
