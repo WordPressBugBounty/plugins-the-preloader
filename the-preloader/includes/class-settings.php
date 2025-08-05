@@ -11,6 +11,7 @@ if ( !defined('ABSPATH') ) {
  * @author   Alobaidi
  * @since    2.0.0
  */
+
 class The_Preloader_Settings {
     private static $instance = null;
     
@@ -24,8 +25,20 @@ class The_Preloader_Settings {
     /**
      * Class constructor
      */
-    public function __construct() {
+    private function __construct() {
         // No initialization here.
+    }
+
+    // Add settings link before activate/deactivate plugin links.
+    public function custom_plugin_action_links($actions, $plugin_file){
+        $plugin = THE_PRELOADER_PLUGIN_BASENAME;
+            
+        if ($plugin == $plugin_file) {
+            $custom_link = '<a href="' . admin_url('admin.php?page=' . THE_PRELOADER_PLUGIN_ID) . '">'.esc_html__('Settings', 'the-preloader').'</a>';
+            $actions = array_merge(array($custom_link), $actions);
+        }
+
+        return $actions;
     }
 
     public function run() {
@@ -33,6 +46,7 @@ class The_Preloader_Settings {
         add_action('admin_menu', array($this, 'add_menu_page'));
         add_action('admin_enqueue_scripts', array($this, 'admin_scripts'));
         add_action('admin_head', array($this, 'first_use'));
+        add_filter('plugin_action_links', array($this, 'custom_plugin_action_links'), 10, 5);
     }
 
     public function admin_scripts($hook) {

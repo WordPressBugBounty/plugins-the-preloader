@@ -1,9 +1,9 @@
 === Preloader ===
 Contributors: Alobaidi
 Tags: preloader, preload, loader, loading, load
-Requires at least: 5.3.0
+Requires at least: 5.8
 Tested up to: 6.8
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -37,6 +37,10 @@ On June 19, 2025, we released version "2.0.0". Features:
 
 * [Live Demo](https://wp-plugins.in/PreloaderPlugin)
 
+### You May Like It
+
+* [Video Popup Plugin](https://wp-plugins.in/VideoPopupPMR)
+
 == Installation ==
 
 ### Installation & Configuration
@@ -69,6 +73,11 @@ For common issues and helpful tips, go to Preloader > FAQ tab.
 1. General Options.
 
 == Changelog ==
+
+= 2.0.2 =
+1. Improved performance.
+
+The plugin is now faster with improved performance. After updating, no action is required on your part.
 
 = 2.0.1 =
 1. Optimized plugin initialization.

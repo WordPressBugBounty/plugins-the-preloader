@@ -12,6 +12,7 @@ if ( !defined('ABSPATH') ) {
  * @author   Alobaidi
  * @since    2.0.0
  */
+
 class The_Preloader_Output {
     private static $instance = null;
     
@@ -25,7 +26,7 @@ class The_Preloader_Output {
     /**
      * Class constructor
      */
-    public function __construct() {
+    private function __construct() {
         // No initialization here.
     }
 

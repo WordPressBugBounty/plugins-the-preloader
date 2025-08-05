@@ -11,6 +11,7 @@ if ( !defined('ABSPATH') ) {
  * @author   Alobaidi
  * @since    2.0.0
  */
+
 class The_Preloader_Core {
     private static $instance = null;
     
@@ -24,18 +25,20 @@ class The_Preloader_Core {
     /**
      * Class constructor
      */
-    public function __construct() {
+    private function __construct() {
         // No initialization here.
     }
     
     public function initialize() {
         // Run components
-        if ( class_exists('The_Preloader_Output') ) {
+        if ( !is_admin() && !class_exists('The_Preloader_Output') ) {
+            require_once THE_PRELOADER_PLUGIN_PATH . 'includes/class-output.php';
             $The_Preloader_Output = The_Preloader_Output::get_instance();
             $The_Preloader_Output->run();
         }
 
-        if ( class_exists('The_Preloader_Settings') ) {
+        if ( is_admin() && !class_exists('The_Preloader_Settings') ) {
+            require_once THE_PRELOADER_PLUGIN_PATH . 'includes/class-settings.php';
             $The_Preloader_Settings = The_Preloader_Settings::get_instance();
             $The_Preloader_Settings->run();
         }
