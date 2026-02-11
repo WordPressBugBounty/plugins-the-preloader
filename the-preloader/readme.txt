@@ -2,7 +2,7 @@
 Contributors: Alobaidi
 Tags: preloader, preload, loader, loading, load
 Requires at least: 5.8
-Tested up to: 6.8
+Tested up to: 6.9
 Stable tag: 2.0.2
 Requires PHP: 7.4
 License: GPLv2 or later
@@ -37,9 +37,13 @@ On June 19, 2025, we released version "2.0.0". Features:
 
 * [Live Demo](https://wp-plugins.in/PreloaderPlugin)
 
-### You May Like It
+### You May Also Like - From Our Plugins
 
-* [Video Popup Plugin](https://wp-plugins.in/VideoPopupPMR)
+[Video Popup Plugin](https://wordpress.org/plugins/video-popup/) - Create unlimited, elegant, and responsive popups for YouTube, Vimeo, MP4 & WebM videos on click or On-Page Load:
+[https://wordpress.org/plugins/video-popup/](https://wordpress.org/plugins/video-popup/)
+
+[Extend Link Plugin](https://wordpress.org/plugins/extend-link/) - Link Options for WordPress Editor:
+[https://wordpress.org/plugins/extend-link/](https://wordpress.org/plugins/extend-link/)
 
 == Installation ==
 

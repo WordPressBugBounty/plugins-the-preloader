@@ -40,7 +40,7 @@ function the_preloader_plugin_row_meta($links, $file) {
             
         $custom_link = array(
                 '<a style="font-weight:bold;" href="https://wp-plugins.in/PreloaderPlugin" target="_blank">' . esc_html__('Plugin Reference', 'the-preloader') . '</a>',
-                '<a style="font-weight:bold;" href="https://wp-plugins.in/VideoPopupPMR" target="_blank">' . esc_html__('Video Popup Plugin', 'the-preloader') . '</a>'
+                '<a style="font-weight:bold;" href="https://wp-time.com/video-popup-plugin-for-wordpress/#live-demo" target="_blank">' . esc_html__('Video Popup Plugin', 'the-preloader') . '</a>'
         );
             
         $links = array_merge($links, $custom_link);
